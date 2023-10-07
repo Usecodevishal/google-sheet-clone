@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css"/>
+    <link rel="stylesheet" href="./menus.css"/>
+
+  </head>
+  <body>
+    <div id="options">
+      <span id="active-cell">null</span>
+      <div id="property-options">
+        <div class="option-flex" id="boldBtn" onClick="makeTextBold(this)"><b>B</b></div>
+        <div class="option-flex" id="italicBtn" onClick="makeTextItalic(this)"><b>I</b></div>
+        <div class="option-flex" id="underlineBtn" onClick="makeTextUnderlined(this)"><b>U</b></div>
+
+
+        <div class="option-flex" id="align-left">
+          <span class="material-icons">format_align_left</span>
+        </div>
+        <div class="option-flex" id="align-center">
+          <span class="material-icons">format_align_center</span>
+        </div>
+        <div class="option-flex" id="align-right">
+          <span class="material-icons">format_align_right</span>
+        </div>
+
+        <div>
+          <label for="color-picker"><span class="material-icons">
+            format_color_fill
+            </span></label>
+          <input type="color" id="color-picker" style="width: 0px; height: 0px;"/>
+        </div>
+      </div>
+    </div>
+
+    
+    <div id="header">
+      <b style="position: sticky; top: 0; left: 0; background-color: white"
+        >S.No
+      </b>
+    </div>
+    <section id="body">
+      <!-- <div id="row"></div> -->
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+#underline{
+    text-decoration: underline;
+}
+
+#property-options > div{
+    padding:10px;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+#property-options > div:hover{
+    background-color: #d0d8e0aa;
+
+}
+
+.active-option{
+    background-color: #84878aaa;
+}
