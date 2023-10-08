@@ -8,39 +8,82 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css"/>
-    <link rel="stylesheet" href="./menus.css"/>
-
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./menus.css" />
   </head>
   <body>
     <div id="options">
       <span id="active-cell">null</span>
       <div id="property-options">
-        <div class="option-flex" id="boldBtn" onClick="makeTextBold(this)"><b>B</b></div>
-        <div class="option-flex" id="italicBtn" onClick="makeTextItalic(this)"><b>I</b></div>
-        <div class="option-flex" id="underlineBtn" onClick="makeTextUnderlined(this)"><b>U</b></div>
+        <div class="option-flex" 
+        id="boldBtn" 
+        onClick="makeTextBold(this)">
+          <b>B</b>
+        </div>
+        <div class="option-flex" 
+        id="italicBtn" 
+        onClick="makeTextItalic(this)">
+          <b>I</b>
+        </div>
+        <div
+          class="option-flex"
+          id="underlineButton"
+          onClick="makeTextUnderlined(this)"
+        >
+          <b style="text-decoration: underline;">U</b>
+        </div>
 
-
-        <div class="option-flex" id="align-left">
+        <div
+          class="option-flex text-align active-option"
+          id="align-left"
+          text-value="left"
+          onClick="onClickTextAlign(this)"
+        >
           <span class="material-icons">format_align_left</span>
         </div>
-        <div class="option-flex" id="align-center">
+        <div
+          class="option-flex text-align"
+          id="align-center"
+          text-value="center"
+          onClick="onClickTextAlign(this)"
+        >
           <span class="material-icons">format_align_center</span>
         </div>
-        <div class="option-flex" id="align-right">
+        <div
+          class="option-flex text-align"
+          id="align-right"
+          text-value="right"
+          onClick="onClickTextAlign(this)"
+        >
           <span class="material-icons">format_align_right</span>
         </div>
 
         <div>
-          <label for="color-picker"><span class="material-icons">
-            format_color_fill
-            </span></label>
-          <input type="color" id="color-picker" style="width: 0px; height: 0px;"/>
+          <label for="color-picker"
+            ><span class="material-icons"> format_color_fill </span></label
+          >
+          <input
+            onChange="changeTextColor(this)"
+            type="color"
+            id="color-picker"
+            style="width: 0px; height: 0px"
+          />
         </div>
+        <div>
+        <label>
+          <span class="material-icons"> border_color </span>
+
+          <input
+            onChange="changeBackgroundColor(this)"
+            type="color"
+            id="color-transform"
+            style="width: 0px; height: 0px"
+          />
+        </label>
+       </div>
       </div>
     </div>
 
-    
     <div id="header">
       <b style="position: sticky; top: 0; left: 0; background-color: white"
         >S.No

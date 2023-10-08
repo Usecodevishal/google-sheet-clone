@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="checkbgColor" style="width:200px; height:200px; border:1px solid red"></div>
+
+    <button onClick="onClickChangeBgColor()" style="background-color: grey; width:100px; height:100px">Click Me</button>
+</body>
+<script >
+       function onClickChangeBgColor(){
+        let box = document.getElementById("checkbgColor")
+            box.style.backgroundColor= "green";
+        
+        
+       }
+
+       let arr1 = [1,2,3,4,5];
+       console.log(arr1);
+
+       let arr2 = [...arr1,6,7,8,9];
+       console.log(arr2);
+       console.log(typeof(typeof({})));
+       
+</script>
+</html>

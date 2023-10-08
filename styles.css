@@ -35,7 +35,7 @@ body {
     z-index: 100;
     margin: 0;
     display: flex;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: fit-content;
     /* position:sticky;
         top:0; */
@@ -45,24 +45,42 @@ body {
     text-align: center;
     min-width: 100px;
     padding: 0.5rem 0rem;
+    /* box-sizing: border-box; */
+  }
+
+  #body{
+    position:relative;
+    top:50px;
   }
 
   .row {
     display: flex;
     width: fit-content;
+    box-sizing: border-box;
   }
 
   .row > b,
   .row > div {
     padding: 0.5rem 0rem;
     min-width: 100px;
+    text-align:left;
 
     border: 1px solid #dfe4e9;
-    text-align: center;
+    
   }
+  .row > div:focus{
+    outline:none;
+  }
+
+  .row > b{
+    text-align:center !important;
+    background-color: white;
+  }
+
+  
 
   .row > b:first-child {
     position: sticky;
     left: 0;
-    background-color: red;
+    
   }
